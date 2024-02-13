@@ -3,12 +3,12 @@
   <head>
     <title>Theme Switcher Exercise</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
   </head>
 
   <body>
     <h1>Hello hello</h1>
-    <div class="box">
+    <div class="box" id="boxColor">
       <p>
         This is a box with text that will change color when you toggle the theme
         switch
@@ -19,7 +19,7 @@
         <legend>Select a theme</legend>
 
         <div>
-          <input type="radio" id="dark" name="theme" value="dark" checked />
+          <input type="radio" id="dark" name="theme" value="dark" checked/>
           <label for="dark">Dark</label>
         </div>
 
@@ -54,6 +54,6 @@
       makeover and showing off your knack for using advanced CSS tricks and
       making the DOM dance a little.
     </p>
-    <script src="./index.js" type="module"></script>
+    <script src="src/index.js" type="module"></script>
   </body>
 </html>
