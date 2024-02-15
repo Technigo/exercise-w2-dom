@@ -24,13 +24,16 @@ crazy.addEventListener('change', changeCrazy); */
 
 dark.addEventListener('change', function(){
     box.style.backgroundColor = 'brown';
+    box.style.transition ="background-color 2s ease";
 })
 
 light.addEventListener('change', function(){
     box.style.backgroundColor = 'yellow';
+    box.style.transition ="background-color 2s ease";
 })
 
 crazy.addEventListener('change', function(){
     box.style.backgroundColor = 'red';
+    box.style.transition ="background-color 2s ease";
 })
 
