@@ -3,12 +3,10 @@ console.log("Start Here 😉");
 const dark = document.getElementById("dark");
 const light = document.getElementById("light");
 const crazy = document.getElementById("crazy");
-
 const box = document.getElementById("box")
 
-
-
-function changeLight() {
+//alternative 1
+/* function changeLight() {
     light.changed = box.style.backgroundColor = 'yellow';
 } 
 function changeDark() {
@@ -20,4 +18,19 @@ function changeCrazy() {
 
 light.addEventListener('change', changeLight);
 dark.addEventListener('change', changeDark);
-crazy.addEventListener('change', changeCrazy);
+crazy.addEventListener('change', changeCrazy); */
+
+//alternative 2
+
+dark.addEventListener('change', function(){
+    box.style.backgroundColor = 'brown';
+})
+
+light.addEventListener('change', function(){
+    box.style.backgroundColor = 'yellow';
+})
+
+crazy.addEventListener('change', function(){
+    box.style.backgroundColor = 'red';
+})
+
