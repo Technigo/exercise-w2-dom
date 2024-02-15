@@ -1,24 +1,23 @@
 console.log("Start Here 😉");
 
-const dark = document.getElementById("dark").checked;
-const light = document.getElementById("light")
-const crazy = document.getElementById("crazy")
-
+const dark = document.getElementById("dark");
+const light = document.getElementById("light");
+const crazy = document.getElementById("crazy");
 
 const box = document.getElementById("box")
-box.style.backgroundColor = "red";
 
 
 
-const radios = document.querySelectorAll('input[type="radio"]');
+function changeLight() {
+    light.changed = box.style.backgroundColor = 'yellow';
+} 
+function changeDark() {
+    light.changed = box.style.backgroundColor = 'brown';
+} 
+function changeCrazy() {
+    light.changed = box.style.backgroundColor = 'red';
+} 
 
-
-/* radios.addEventListener("click", changeColor = () => {
-    if (darkColor){
-        box.style.backgroundColor = "brown"
-    }else if(lightColor){
-        box.style.backgroundColor = "yellow"
-    }else if (crazyColor){
-        box.style.backgroundColor = "purple"
-    }
-}) */
+light.addEventListener('change', changeLight);
+dark.addEventListener('change', changeDark);
+crazy.addEventListener('change', changeCrazy);
